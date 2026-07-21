@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // 1. List your target destination websites here
+        const websites = [
+            "https://artfight.net/character/9734567.gupp",
+            "https://artfight.net/character/10361087.abalus",
+            "https://artfight.net/character/9697039.the-red-monarch",
+            "https://artfight.net/character/10735623.velkar"
+            "https://artfight.net/character/8593900.mortimer"
+            "https://artfight.net/character/10040510.candominius-right-hand-of-evil"
+            "https://artfight.net/character/9699915.aeltor"
+        ];
+
+        // 2. Select a random index from the array
+        const randomIndex = Math.floor(Math.random() * websites.length);
+        const randomUrl = websites[randomIndex];
+
+        // 3. Instantly redirect the user
+        window.location.replace(randomUrl);
+    </script>
+</head>
+<body>
+    <p>Choosing an OC... If ur page no go there, please refresh.</p>
+</body>
+</html>
